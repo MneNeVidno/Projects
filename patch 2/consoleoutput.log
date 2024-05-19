@@ -1,0 +1,54 @@
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:01<00:00,  1.09s/it]100%|##########| 1/1 [00:02<00:00,  2.21s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:01<00:00,  1.16s/it]100%|##########| 1/1 [00:02<00:00,  2.18s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:01<00:00,  1.42s/it]100%|##########| 1/1 [00:02<00:00,  2.57s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:01<00:00,  1.17s/it]100%|##########| 1/1 [00:02<00:00,  2.25s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:01<00:00,  1.52s/it]100%|##########| 1/1 [00:02<00:00,  2.64s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:00<00:00,  1.13it/s]100%|##########| 1/1 [00:02<00:00,  2.50s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:01<00:00,  1.11s/it]100%|##########| 1/1 [00:02<00:00,  2.45s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "main.py", line 309, in <module>
+  File "main.py", line 297, in write
+  File "main.py", line 282, in write_to_console
+  File "tkinter\__init__.py", line 1702, in configure
+  File "tkinter\__init__.py", line 1692, in _configure
+_tkinter.TclError: invalid command name ".!text"
+100%|##########| 1/1 [00:02<00:00,  2.89s/it]100%|##########| 1/1 [00:05<00:00,  5.52s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:00<00:00,  1.10it/s]100%|##########| 1/1 [00:02<00:00,  2.16s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:01<00:00,  1.33s/it]100%|##########| 1/1 [00:02<00:00,  2.86s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:00<00:00,  1.12it/s]100%|##########| 1/1 [00:02<00:00,  2.34s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:00<00:00,  1.07it/s]100%|##########| 1/1 [00:03<00:00,  3.40s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:01<00:00,  1.28s/it]100%|##########| 1/1 [00:02<00:00,  2.82s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:01<00:00,  1.14s/it]100%|##########| 1/1 [00:01<00:00,  1.94s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:01<00:00,  1.15s/it]100%|##########| 1/1 [00:01<00:00,  1.81s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|##########| 1/1 [00:00<00:00,  1.04it/s]100%|##########| 1/1 [00:01<00:00,  1.93s/it]
+Exception in thread Thread-1 (run_progress):
+Traceback (most recent call last):
+  File "main.py", line 126, in main_function
+  File "main.py", line 264, in update_progress
+  File "tkinter\__init__.py", line 1713, in __setitem__
+  File "tkinter\__init__.py", line 1702, in configure
+  File "tkinter\__init__.py", line 1692, in _configure
+RuntimeError: main thread is not in main loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 250, in run_main_function
+  File "main.py", line 142, in main_function
+  File "main.py", line 297, in write
+  File "main.py", line 282, in write_to_console
+  File "tkinter\__init__.py", line 1702, in configure
+  File "tkinter\__init__.py", line 1692, in _configure
+RuntimeError: main thread is not in main loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "threading.py", line 1038, in _bootstrap_inner
+  File "threading.py", line 975, in run
+  File "main.py", line 243, in run_progress
+  File "main.py", line 253, in run_main_function
+  File "main.py", line 282, in write_to_console
+  File "tkinter\__init__.py", line 1702, in configure
+  File "tkinter\__init__.py", line 1692, in _configure
+RuntimeError: main thread is not in main loop
